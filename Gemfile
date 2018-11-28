@@ -22,7 +22,7 @@ gem 'puma', '~> 3.11'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'rack-cors'
+gem 'rack-cors', :require => 'rack/cors'
 gem 'active_model_serializers'
 
 # Reduces boot times through caching; required in config/boot.rb
