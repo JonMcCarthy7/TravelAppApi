@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  location: MyString
+  start_date: 2018-11-27 17:31:53
+  end_date: 2018-11-27 17:31:53
+  memorable: one
+  memorable_type: Memorable
+
+two:
+  name: MyString
+  description: MyText
+  location: MyString
+  start_date: 2018-11-27 17:31:53
+  end_date: 2018-11-27 17:31:53
+  memorable: two
+  memorable_type: Memorable
