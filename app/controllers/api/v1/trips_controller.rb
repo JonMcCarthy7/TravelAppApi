@@ -3,7 +3,7 @@
 module Api::V1
   class TripsController < ApiController
     before_action :set_trip, only: %i[show update destroy]
-    
+
     def index
       @trips = Trip.all
       render json: { status: 'SUCCESS', message: 'Loaded all trips', data: @trips }, status: :ok
@@ -20,7 +20,7 @@ module Api::V1
 
     def update
       @trip.update(trip_params)
-      head :no_content
+      render json: { status: 'SUCCESS', message: 'Trip Updated', data: @trip }, status: :ok
     end
 
     def destroy
