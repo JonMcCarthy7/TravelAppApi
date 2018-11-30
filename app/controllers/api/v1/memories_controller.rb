@@ -5,7 +5,7 @@ module Api::V1
     before_action :set_memory, only: %i[show update destroy]
     
     def index
-      @memories = Memory.all
+      @memories = Memory.where(memorable_type: "Trip")
       render json: { status: 'SUCCESS', message: 'Loaded all memories', data: @memories }, status: :ok
     end
 
