@@ -31,7 +31,7 @@ module Api::V1
     private
 
     def trip_params
-      params.permit(:id, :user_id, :name, :start_date, :end_date, :country, :description, :created_at, :updated_at)
+      params.permit(:id, :trip_header, :user_id, :name, :start_date, :end_date, :country, :description, :created_at, :updated_at)
     end
 
     def set_trip
